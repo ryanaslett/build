@@ -242,6 +242,7 @@ hosts:
         smartos21-x64-2: {ip: 8.225.232.137}
         smartos23-x64-1: {ip: 8.225.232.134}
         smartos23-x64-2: {ip: 8.225.232.141}
+        smartos20220407-x64-1: {ip: 192.207.255.74}
 
     - osuosl:
         # secret for -1 was compromised, do not use -1 name
