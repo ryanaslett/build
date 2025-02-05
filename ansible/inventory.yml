@@ -55,15 +55,6 @@ hosts:
     - joyent:
         ubuntu1804_docker-x64-1: {ip: 147.28.162.104, user: ubuntu}
 
-    - macstadium:
-        macos11.0-arm64-1:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 207.254.38.74
-            user: administrator
-            remote_env:
-                PATH: /opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
-            server_jobs: 6
-
     - marist:
         zos24-s390x-1: {ip: 148.100.36.157, user: unix1}
 
@@ -80,15 +71,6 @@ hosts:
             user: cloud-user
             swap_file_size_mb: 4096
         rhel8-ppc64_le-1: {ip: 140.211.168.185, swap_file_size_mb: 2048, user: cloud-user}
-
-    - orka:
-        macos11-x64-1:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 199.7.167.100
-            port: 8822
-            user: administrator
-
-
 
   - test:
 
@@ -179,20 +161,6 @@ hosts:
             build_test_v8: yes
             is_benchmark: true
 
-    - macstadium:
-        macos11.0-arm64-3:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 207.254.38.86
-            user: administrator
-            remote_env:
-                PATH: /opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
-        macos11.0-arm64-4:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 207.254.38.89
-            user: administrator
-            remote_env:
-                PATH: /opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
-
     - linuxonecc:
         rhel9-s390x-1: {ip: 148.100.85.171, swap_file_size_mb: 2048, user: linux1}
         rhel9-s390x-2: {ip: 148.100.85.83, swap_file_size_mb: 2048, user: linux1}
@@ -268,33 +236,6 @@ hosts:
         rhel9-ppc64_le-2: {ip: 140.211.10.69, user: cloud-user, swap_file_size_mb: 2048}
         rhel9-ppc64_le-3: {ip: 140.211.10.110, user: cloud-user, swap_file_size_mb: 2048}
         ubuntu2004_docker-arm64-1: {ip: 140.211.169.11, user: ubuntu}
-
-    - orka:
-        macos10.15-x64-1:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 199.7.167.102
-            port: 8824
-            user: administrator
-        macos10.15-x64-2:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 199.7.167.101
-            port: 8824
-            user: administrator
-        macos11-x64-1:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 199.7.167.102
-            port: 8822
-            user: administrator
-        macos11-x64-2:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 199.7.167.102
-            port: 8823
-            user: administrator
-        macos12-x64-1:
-            ansible_python_interpreter: /usr/bin/python3
-            ip: 199.7.167.100
-            port: 8823
-            user: admin
 
     - iinthecloud:
         ibmi74-ppc64_be-1: {ip: 65.183.160.52, user: nodejs}
